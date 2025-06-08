@@ -11,3 +11,12 @@
 
 ```bash
 go run cmd/main.go
+
+## API Endpoints
+
+| Метод | URL                                      | Описание                      |
+|-------|------------------------------------------|-------------------------------|
+| POST  | /wallet?owner_id=1                       | Создать кошелёк               |
+| GET   | /wallet/get?id=1                         | Получить информацию о кошельке|
+| POST  | /wallet/deposit?id=1&amount=100          | Пополнить баланс              |
+| POST  | /wallet/withdraw?id=1&amount=50          | Снять деньги с баланса        |
